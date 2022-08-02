@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="img/logo2.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts/others.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" media="(max-width:768px)" href="css/max-768px.css" />
+<title>UtEA - GALLERY</title>
+</head>
+
+<body>
+    
+<!-- PROGRESS BAR -->
+<div class="progressBar">
+  <div class="progressBarLine" id="myBar"></div>
+</div>
+
+<!-- NAVIGATION BAR (COM VIEW) -->
+<nav>
+  <table width="100%" id="navBar">
+      <tr>
+          <td><a href="index.html"><img src="img/headerlogo.png" alt="logo" id="headerLogo" draggable="false">
+          <div>
+              <td class="headerSites">
+                  <label><a href="index.html" id="home">HOME</a></label>
+                  <label><a href="aboutus.html" id="aboutUs">ABOUT US</a></label>
+                  <p id="paragraphForNav"></p>
+                  <label><a href="gallery.html" id="gallery">GALLERY</a></label>
+                  <label><a href="registration.html" id="registration">REGISTRATION</a></label>
+                  <label><a href="contactus.html" id="contactUs">CONTACT US</a></label>
+              </td>
+          </div>
+      </tr>
+  </table>
+</nav>
+
+<!-- NAVIGATION BAR (PHONE VIEW) -->
+<nav>
+  <table width="100%" id="navBarForPhone">
+      <tr>
+          <td id="headerLogoTd"><a href="index.html"><img src="img/headerlogo.png" width="100%" alt="logo" id="headerLogo" draggable="false">
+          <div>
+              <td>
+                  <span style="font-size:50px; cursor:pointer;" onclick="openNav()" id="miniMenuForPhone">&#9776;</span>
+              </td>
+          </div>
+      </tr>
+  </table>
+</nav>
+
+<!-- SIDE NAVBAR (PHONE VIEW) -->
+  <div id="sideNavBar" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="closeButtonMenu">&times;</a>
+      <img src="img/brandname.png" width="50%" alt="logo" id="logoInMenu" draggable="false">
+      <a href="index.html" class="headerSitesForPhone" id="homeInMenu">HOME</a>
+      <a href="aboutus.html" class="headerSitesForPhone">ABOUT US</a>
+      <a href="gallery.html" class="headerSitesForPhone" id="galleryInMenu">GALLERY</a>
+      <a href="registration.html" class="headerSitesForPhone" id="registrationInMenu">REGISTRATION</a>
+      <a href="contactus.html" class="headerSitesForPhone" id="contactUsInMenu">CONTACT US</a>
+      <div id="allSocialSideNavBar">
+        <a href="https://www.instagram.com/UtEA/"><img src="img/instagram.png" alt="instagram_logo" class="socialMiniMenu" id="instagramInMiniMenu" draggable="false"/></a>
+        <a href="https://www.facebook.com/UtEA/"><img src="img/facebook.png" alt="facebook_logo" class="socialMiniMenu" id="facebookInMiniMenu" draggable="false"/></a>
+        <a href="https://www.twitter.com/UtEA/"><img src="img/twitter.png" alt="twitter_logo" class="socialMiniMenu" id="twitterInMiniMenu" draggable="false"/></a>  
+  </div>
+  </div>
+
+<!-- IMAGE CAROUSEL -->
+<div class="container" id="carouselMain">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/carousel2.jpg" alt="New Flavour" style="width:100%;" draggable="false">
+      </div>
+
+      <div class="item">
+        <img src="img/carousel.jpg" alt="1 for 1" style="width:100%;" draggable="false">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div id = "ourDrinkSection">
+  <label id="ourDrinkTitle">OUR DRINKS</label>
+  <br>
+  <label id="ourDrinkTitleDesc" class="desc">Just Sip It Away!</label>
+  <p></p>
+</div>
+
+<div id="button">
+  <button class="tablink" id="milkTeaButton" onclick="openPage('milkTea', this, '#f6d193')"><strong>MILK TEA</strong></button>
+  <button class="tablink" id="greenTeaButton" onclick="openPage('greenTea', this, '#A7DB42 ')"><strong>GREEN TEA</strong></button>
+  <button class="tablink" id="coffeeButton" onclick="openPage('cofee', this, '#dd7f2a')"><strong>COFFEE</strong></button>
+  <button class="tablink" id="frappeButton" onclick="openPage('frappe', this, 'orange')"><strong>FRAPPE</strong></button>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row" style="border-bottom: solid;">
+    <div id="milkTea" class="tabcontent">
+      <div id="brownsugarmilktea" class="col-sm-3 col-xs-6">
+        <img src="img/brownsugarmilktea.jpg" alt="brown sugar milk tea" class="ourDrinkSectionPic" width="100%" draggable="false">
+        <label class="col-sm-12" id="drinkName1Gallery">Brown Sugar Milk Tea</label>
+      </div>
+      <div id="goldenbubblemilktea" class="col-sm-3 col-xs-6">
+          <img src="img/goldenbubblemilktea.jpg" alt="golden bubble milk tea" class="ourDrinkSectionPic" width="100%" draggable="false">
+          <label class="col-sm-12" id="drinkName2Gallery">Golden Bubble Milk Tea</label>
+      </div>
+      <div id="purplesweetpotatomilkteaPhone" class="col-sm-3 col-xs-6">
+        <img src="img/purplesweetpotatomilktea.jpg" alt="purple sweet potato milk tea" class="ourDrinkSectionPic" width="100%" draggable="false">
+        <label class="col-sm-12" id="drinkName3Gallery">Purple Sweet Potato Milk Tea</label>
+      </div>
+      <div id="thaimilktea" class="col-sm-3 col-xs-6">
+          <img src="img/thaimilktea.jpg" alt="thai milk tea" class="ourDrinkSectionPic" width="100%" draggable="false">
+          <label class="col-sm-3" id="drinkName4Gallery">Thailand Iced Milk Tea</label>
+      </div>
+    </div>
+
+    <div id="greenTea" class="tabcontent">
+      <div class="col-sm-3 col-xs-0"></div>
+      <div id="matchagreenteaforphone" class="col-sm-3 col-xs-6">
+        <img src="img/matchagreentea.jpg" alt="matcha green tea" class="ourDrinkSectionPic" width="100%" draggable="false">
+        <label class="col-sm-12" id="drinkName5Gallery">Matcha Green Tea w/ Cream</label>
+      </div>
+      <div id="hojichatea" class="col-sm-3 col-xs-6">
+        <img src="img/hojichatea.jpg" alt="hojicha tea" class="ourDrinkSectionPic" width="100%" draggable="false">
+        <label class="col-sm-12" id="drinkName6Gallery">Hojicha Green Tea w/ Soy Milk</label>
+      </div>
+      <div class="col-sm-3 col-xs-0"></div>
+    </div>
+
+    <div id="cofee" class="tabcontent">
+      <div class="col-sm-3 col-xs-0"></div>
+      <div id="icedcoffee" class="col-sm-3 col-xs-6">
+        <img src="img/icedcoffee.jpg" alt="iced coffee" class="ourDrinkSectionPic" width="100%" draggable="false">
+        <label class="col-sm-3" id="drinkName7Gallery">Iced Coffee</label>
+      </div>
+      <div id="dalgonacoffee" class="col-sm-3 col-xs-6">
+        <img src="img/dalgona coffee.jpg" alt="" class="ourDrinkSectionPic" width="100%" draggable="false">
+        <label class="col-sm-3" id="drinkName8Gallery">Dalgona Coffee</label>
+      </div>
+      <div class="col-sm-3 col-xs-0"></div>
+
+    </div>
+
+    <div id="frappe" class="tabcontent">
+      <div class="col-sm-3 col-xs-0"></div>
+      <div id="strawberrylemonfrappe" class="col-sm-3 col-xs-6">
+        <img src="img/strawberrylemonfrappe.jpg" alt="strawberry lemon frappe" class="ourDrinkSectionPic" width="100%" draggable="false">
+        <label class="col-sm-3" id="drinkName9Gallery">Strawberry Lemon Frappe</label>
+      </div>
+      <div id="darkchocolatefrappe" class="col-sm-3 col-xs-6">
+        <img src="img/chocolatefrappe.jpg" alt="dark chocolate frappe" class="ourDrinkSectionPic" width="100%" draggable="false">
+        <label class="col-sm-3" id="drinkName10Gallery">Dark Chocolate Frappe</label>
+      </div>
+      <div class="col-sm-3 col-xs-0"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById("milkTeaButton").click();
+</script>
+
+
+<!-- FOOTER -->
+<footer>
+    <label id="followUs">Follow Us On:</label>
+    <br>
+    <a href="https://www.instagram.com/UtEA/"><img src="img/instagram.png" alt="instagram_logo" width="100%" class="social" draggable="false"/></a>
+    <a href="https://www.facebook.com/UtEA/"><img src="img/facebook.png" alt="facebook_logo" width="100%" class="social" draggable="false"/></a>
+    <a href="https://www.twitter.com/UtEA/"><img src="img/twitter.png" alt="twitter_logo" width="100%" class="social" draggable="false"/></a>
+    <p></p>
+    <ul class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li>Gallery</li>
+    </ul>
+    <p></p>
+    <label id="copyright">© 2020 - UtEA </label>
+</footer>
+</body>
+</html>

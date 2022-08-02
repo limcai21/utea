@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="img/logo2.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts/others.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" media="(max-width:768px)" href="css/max-768px.css" />
+<title>UtEA - HOME</title>
+</head>
+
+<body>
+    
+<!-- PROGRESS BAR -->
+<div class="progressBar">
+    <div class="progressBarLine" id="myBar"></div>
+</div>
+
+<!-- NAVIGATION BAR (COM VIEW) -->
+<nav>
+    <table width="100%" id="navBar">
+        <tr>
+            <td><a href="index.html"><img src="img/headerlogo.png" alt="logo" id="headerLogo" draggable="false">
+            <div>
+                <td class="headerSites">
+                    <label><a href="index.html" id="home">HOME</a></label>
+                    <label><a href="aboutus.html" id="aboutUs">ABOUT US</a></label>
+                    <p id="paragraphForNav"></p>
+                    <label><a href="gallery.html" id="gallery">GALLERY</a></label>
+                    <label><a href="registration.html" id="registration">REGISTRATION</a></label>
+                    <label><a href="contactus.html" id="contactUs">CONTACT US</a></label>
+                </td>
+            </div>
+        </tr>
+    </table>
+</nav>
+
+<!-- NAVIGATION BAR (PHONE VIEW) -->
+<nav>
+    <table width="100%" id="navBarForPhone">
+        <tr>
+            <td id="headerLogoTd"><a href="index.html"><img src="img/headerlogo.png" width="100%" alt="logo" id="headerLogo" draggable="false">
+            <div>
+                <td>
+                    <span style="font-size:50px; cursor:pointer;" onclick="openNav()" id="miniMenuForPhone">&#9776;</span>
+                </td>
+            </div>
+        </tr>
+    </table>
+</nav>
+
+<!-- SIDE NAVBAR (PHONE VIEW) -->
+    <div id="sideNavBar" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="closeButtonMenu">&times;</a>
+        <img src="img/brandname.png" width="50%" alt="logo" id="logoInMenu" draggable="false">
+        <a href="index.html" class="headerSitesForPhone" id="homeInMenu">HOME</a>
+        <a href="aboutus.html" class="headerSitesForPhone">ABOUT US</a>
+        <a href="gallery.html" class="headerSitesForPhone">GALLERY</a>
+        <a href="registration.html" class="headerSitesForPhone">REGISTRATION</a>
+        <a href="contactus.html" class="headerSitesForPhone">CONTACT US</a>
+        <div id="allSocialSideNavBar">
+            <a href="https://www.instagram.com/UtEA/"><img src="img/instagram.png" alt="instagram_logo" class="socialMiniMenu" id="instagramInMiniMenu" draggable="false"/></a>
+            <a href="https://www.facebook.com/UtEA/"><img src="img/facebook.png" alt="facebook_logo" class="socialMiniMenu" id="facebookInMiniMenu" draggable="false"/></a>
+            <a href="https://www.twitter.com/UtEA/"><img src="img/twitter.png" alt="twitter_logo" class="socialMiniMenu" id="twitterInMiniMenu" draggable="false"/></a>  
+        </div>
+    </div>
+
+<!-- BANNER (COM VIEW) -->
+    <img src="img/welcomebackcom.jpg" id="welcomebackbanner" alt="Welcome Back, We Miss You" draggable="false">
+
+<!-- BANNER (PHONE VIEW) -->  
+    <img src="img/welcomebackphone.jpg" id="welcomebackbannerForPhone" alt="Welcome Back, We Miss You" draggable="false">
+
+
+<!-- NEWS AND EVENT SECTION (COM VIEW) -->
+    <div id="newsSectionForCom" class="container-fluid" style="background-image: url(img/dalgonacofeecom.jpg)"> 
+        <div id="newsEvents" class="row"></div>
+            <label id="newsHead">NEWS & EVENTS</label>
+            <br>
+            <label class="desc">Stay Up To Date!</label>
+            <p></p>
+            <div id="belowNewsTitle">
+                <div class="col-sm-4 col-xs-12"></div>
+                <div id="newFlavorSection" class="col-sm-8 col-xs-12">
+                    <label id="newFlavor">NEW FLAVOUR!</label>
+                    <p></p>
+                    <p></p>
+                    <label id="newFlavorName">Dalgona Coffee</label>
+                    <br>
+                    <label id="newFlavorDesc">Dalgona Coffee is a cold latte drink that comes with a velvety smooth and sweet coffee foam on top. The combination of cold milk and the bittersweet coffee is absolutely delicious. Dalgona coffee is inspired by the South Korean dalgona candy, a toffee sponge that resembles the creamy dollop that tops the ice coffee</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- NEWS AND EVENT SECTION (PHONE VIEW) -->
+<div id="newsSectionForPhone" class="container-fluid" style="background-image: url(img/dalgonacofeephone.jpg)"> 
+    <div id="newsEvents" class="row"></div>
+        <label id="newsHead">NEWS & EVENTS</label>
+        <br>
+        <label class="desc">Stay Up To Date!</label>
+        <p></p>
+        <div id="belowNewsTitle">
+            <div class="col-sm-4 col-xs-12"></div>
+            <div id="newFlavorSection" class="col-sm-8 col-xs-12">
+                <label id="newFlavor">NEW FLAVOUR!</label>
+                <p></p>
+                <p></p>
+                <label id="newFlavorName">Dalgona Coffee</label>
+                <br>
+                <label id="newFlavorDesc">Dalgona Coffee is a cold latte drink that comes with a velvety smooth and sweet coffee foam on top. The combination of cold milk and the bittersweet coffee is absolutely delicious. Dalgona coffee is inspired by the South Korean dalgona candy, a toffee sponge that resembles the creamy dollop that tops the ice coffee</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="newOutletComingSoonCom" style="background-image: url(img/newoutletcomingsoon.jpg); background-attachment: fixed; background-size: contain; background-repeat: repeat; height: 30vw; background-position: center; width: 100%; border-bottom: solid;"></div>
+
+
+<div style="background-image: url('img/1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+
+
+<!-- OUR FEATURED PRODUCT -->
+    <div id="featuredProductSection" class="container-fluid">
+        <div id="featuredProduct" class="row">
+            <label id="productHead">OUR FEATURED PRODUCTS</label>
+            <br>
+            <label id="productHeadDesc" class="desc">Trust Me, You Won't Regret It</label>
+            <p></p>
+            <div id="brownsugarmilktea" class="col-sm-3 col-xs-6">
+                <img src="img/brownsugarmilktea.jpg" alt="brown sugar milk tea" class="drinkPic" width="100%" draggable="false">
+                <label class="col-sm-12" id="drinkName1">Brown Sugar Milk Tea</label>
+            </div>
+            <div id="goldenbubblemilktea" class="col-sm-3 col-xs-6">
+                <img src="img/goldenbubblemilktea.jpg" alt="golden bubble milk tea" class="drinkPic" width="100%" draggable="false">
+                <label class="col-sm-12" id="drinkName2">Golden Bubble Milk Tea</label>
+            </div>
+            <div id="matchagreentea" class="col-sm-3 col-xs-6">
+                <img src="img/matchagreentea.jpg" alt="matcha green tea" class="drinkPic" width="100%" draggable="false">
+                <label class="col-sm-12" id="drinkName3">Matcha Green Tea w/ Cream</label>
+            </div>
+            <div id="purplesweetpotatomilktea" class="col-sm-3 col-xs-6">
+                <img src="img/purplesweetpotatomilktea.jpg" alt="purple sweet potato milk tea" class="drinkPic" width="100%" draggable="false">
+                <label class="col-sm-12" id="drinkName4">Purple Sweet Potato Milk Tea</label>
+            </div>
+            <div class="col-xs-12">
+                <a href="gallery.html"><label id="clickForMore">Click Here To See All Our Drinks! 😊</label></a>
+            </div>
+        </div> 
+    </div>
+
+
+<!-- FOOTER -->
+    <footer>
+        <label id="followUs">Follow Us On:</label>
+        <br>
+        <a href="https://www.instagram.com/UtEA/"><img src="img/instagram.png" alt="instagram_logo" width="100%" class="social" draggable="false"/></a>
+        <a href="https://www.facebook.com/UtEA/"><img src="img/facebook.png" alt="facebook_logo" width="100%" class="social" draggable="false"/></a>
+        <a href="https://www.twitter.com/UtEA/"><img src="img/twitter.png" alt="twitter_logo" width="100%" class="social" draggable="false"/></a>
+            <p></p>
+        <label id="copyright">© 2020 - UtEA </label>
+    </footer>
+
+</body>
+</html>

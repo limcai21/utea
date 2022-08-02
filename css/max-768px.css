@@ -1,0 +1,281 @@
+@media (max-width: 767px) {
+    /*- NAVIGATION BAR -*/
+    #navBar {
+        display: block;
+    }
+
+    /*- NAVIGATION MINI MENU PHONE -*/
+    .headerSites {
+        display: none;
+    }
+
+    #navBarForPhone {
+        top: 0;
+        background-color: #f9c784;
+        display: table;
+        text-align: right;
+        position: fixed;
+        z-index: 2;
+        border-bottom: solid;
+    }
+
+    #headerLogo {
+        max-width: 200px; 
+        height: auto;
+    }
+
+    #logoInMenu {
+        margin-top: 2px;
+        width: 140px;
+        margin-left: 20px;
+    }
+
+    #sideNavBar {
+        display: block;
+        padding-top: 13px;
+        z-index: 2;
+    }
+
+    #navBar {
+        display: none;
+    }
+
+    #headerLogoTd {
+        text-align: left;
+    }
+
+    #homeInMenu {
+        margin-top: 20px;
+    }
+
+    #allSocialSideNavBar {
+        margin-top: 50px;
+        text-align: center;
+        background-color: white;
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 15px; 
+        margin-bottom: 30px;
+    }
+
+    .socialMiniMenu {
+        width: 50px;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #facebookInMiniMenu {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+
+/* DONT ADJUST SO MUCH */
+    /* The side navigation menu */
+    .sidenav {
+        height: 100%;               /* 100% Full-height */
+        width: 0;                   /* 0 width - change this with JavaScript */
+        position: fixed;            /* Stay in place */
+        z-index: 1;                 /* Stay on top */
+        top: 0;                     /* Stay at the top */
+        right: 0;       
+        background-color: black;  /* Menu Color */  
+        overflow-x: hidden;         /* Disable horizontal scroll */
+        padding-top: 20px;          /* Place content 60px from the top */
+        transition: 0.4s;           /* 0.5 second transition effect to slide in the sidenav */
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;    }
+
+
+    /* The navigation menu links */
+    .headerSitesForPhone {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        display: block;
+        transition: 0.3s;
+        border-radius: 10px;
+        margin-left: 30px;
+        padding-left: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+}
+
+    #miniMenuForPhone {
+        color: black;
+        text-align: right;
+        margin-right: 30px;
+    }
+
+    #miniMenuForPhone:hover {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+        color: black;
+        border-radius: 10px;
+        background-color: white;
+        text-decoration: none;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        right: 20px;
+        font-size: 40px;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    #closeButtonMenu {
+        margin-top: 15px;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
+    }
+
+    #closeButtonMenu:hover {
+        color: black;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;  
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    .sidenav a {
+        font-size: 18px;
+    }
+
+
+    /*- BANNER BACKGROUND -*/
+    #welcomebackbanner {
+        display: none;
+    }
+
+    #welcomebackbannerForPhone {
+        margin-top: 113px;
+        display: initial;
+    }
+
+
+    /*- NEWS AND EVENT SECTION -*/
+    #newsEvents {
+        padding-top: 20px;
+    }
+
+    #newFlavorSection {
+        margin-top: 300px;
+    }
+
+    #newsSectionForCom {
+        display: none;
+    }
+    
+    #newsSectionForPhone {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        text-align: center;
+        border: solid;
+        border-right: none;
+        border-left: none;
+        color: white;
+        border-top: solid;
+        border-bottom: solid;
+        border-color: black;
+        height: auto;   
+    }
+
+    /*- FEATURED PRODUCT SECTION -*/
+    #productHead {
+        margin-top: 20px
+    }
+    #purplesweetpotatomilktea, #matchagreentea {
+        margin-top: 20px;
+    }
+
+    #featuredProductSection {
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+
+
+
+    /*- GALLERY -*/
+    
+
+
+    /*- REGISTRATION -*/
+    #name, #email, #number, #purpose, #password, #retypepassword, #date {
+        width: 80%;
+    }
+    
+    #name {
+        width: 39.7%;
+    }
+
+    #joinUsButton {
+        width: 60.9%;
+    }
+
+    #cancelButton {
+        width: 20%;
+    }
+
+
+    /*- CONTACT US -*/
+    #newLocationPic {
+        border-left: solid;
+        border-top: none;
+        border-bottom: solid;
+    }
+
+    .row.display-flex {
+        display: inline;
+        flex-wrap: nowrap;
+    }
+
+    #leftSupport {
+        border-bottom: solid;
+    }
+    
+    #bottomSupport {
+        border-left: solid;
+        border-top: none;
+    }
+
+    #locationMap {
+        height: 100%;
+    }
+
+    #removeIt {
+        display: none;
+    }
+
+    #locationSupport {
+        height: 500px;
+    }
+
+}
+
+
+
